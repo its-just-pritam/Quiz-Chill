@@ -71,7 +71,7 @@ let generateUnderscore = () => {
 
 }
 
-axios.get('http://www.omdbapi.com?s=' + chosenWord + '&apikey=9be27fce').then(function(response){
+axios.get('https://www.omdbapi.com?s=' + chosenWord + '&apikey=9be27fce').then(function(response){
 
 		//$("#hint").html('<p>HINTS</p>');
 		let output = ``;
@@ -150,7 +150,7 @@ axios.get('http://www.omdbapi.com?s=' + chosenWord + '&apikey=9be27fce').then(fu
 //MOVIE DATA
 
 function getMovies(chosenWord){
-	axios.get('http://www.omdbapi.com?s=' + chosenWord + '&apikey=9be27fce').then(function(response){
+	axios.get('https://www.omdbapi.com?s=' + chosenWord + '&apikey=9be27fce').then(function(response){
 
 		let movie = response.data.Search;
 		console.log(movie);
